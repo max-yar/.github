@@ -3,10 +3,6 @@
   <img src="assets/team-banner-light.png" alt="Max-Yar" width="100%">
 </picture>
 
-# We are engineers who design, develop and run web products
-
----
-
 ## ProfiHub
 
 <picture>
@@ -28,4 +24,4 @@ Home · Delivery · IT · Creative · Tutoring · Beauty & Health · Auto · Pet
 
 ## Get in touch
 
-Questions about ProfiHub? Write to the [ProfiHub Telegram channel](https://t.me/profihub_ua).
+Questions about ProfiHub? Write to [hello@profihub.com.ua](mailto:hello@profihub.com.ua) or to the [ProfiHub Telegram channel](https://t.me/profihub_ua).
