@@ -1,0 +1,55 @@
+name: "Frontend task"
+description: "Frontend task under a Story"
+title: "[FE] "
+labels: ["frontend"]
+type: Task
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Motivation"
+      description: "Frontend-relevant slice of the Story's Motivation — why this side matters, one or two sentences."
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "Scope"
+      description: "What changes — frontend only."
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: "Out of scope"
+      description: "Frontend-side exclusion, if different from the Story's."
+  - type: textarea
+    id: design
+    attributes:
+      label: "Design"
+      description: "Usually empty — the contract already lives in the Story's Design → API and the merged OpenAPI spec. Fill in only for non-trivial client-side logic, or a choice local to the frontend with its own reason."
+      value: |
+        **Decisions** — only choices local to the frontend (the Story's Decisions cover anything that also touches the backend); rare — most frontend work has none
+
+        |**Decision**|**Why**|
+        |:---------|:-----|
+        |<what was chosen; a rejected alternative is also a row>|<one-line reason>|
+
+        <otherwise: non-trivial client-side logic only — local state machine, optimistic update flow, caching strategy>
+  - type: textarea
+    id: open-for-implementer
+    attributes:
+      label: "Open for the implementer"
+      description: "Component structure, styling approach, library choice."
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "Acceptance criteria"
+      description: "Observable: page/component, state after action, what the user sees. Plus compatibility — what still works from before."
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: "References"
+      description: "External source: documentation, standard, article, design doc or ADR in the repo — one line on why it's worth reading."

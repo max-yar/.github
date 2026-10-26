@@ -1,0 +1,59 @@
+name: "Story"
+description: "Parent feature ticket. Created first."
+title: "[STORY] "
+type: Story
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Motivation"
+      description: "2-5 sentences: what is wrong or needed, who it hurts, why now. One concrete example beats a general description."
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "Scope"
+      description: "What changes, by component."
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: "Out of scope"
+      description: "Plausible but deliberately excluded, and where it went."
+  - type: textarea
+    id: design
+    attributes:
+      label: "Design"
+      description: "Only subsections with something to say — delete the rest, don't leave empty headings. Every Decisions row needs a reason; without one it belongs in a task's Open for the implementer, not here."
+      value: |
+        **Decisions**
+
+        |**Decision**|**Why**|
+        |:---------|:-----|
+        |<what was chosen; a rejected alternative is also a row>|<one-line reason>|
+
+        **API**
+
+        <sketch of the planned contract — endpoints, request/response shape, error codes>
+
+        **Sequence**
+
+        <cross-service interaction order, when it matters>
+
+        **Rollout**
+
+        <what to do before and after rollout, service rollout order — if order doesn't matter, say so>
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "Acceptance criteria"
+      description: "1-3 end-to-end, user-observable checks that only prove out once BOTH tasks are deployed together — not a restatement of either task's own criteria."
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: "References"
+      description: "External source: documentation, standard, article, design doc or ADR in the repo — one line on why it's worth reading."

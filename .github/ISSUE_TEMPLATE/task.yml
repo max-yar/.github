@@ -1,0 +1,68 @@
+name: "Task"
+description: "Standalone technical task — no parent Story (infra, devops, a single-repo chore)"
+title: "[TASK] "
+type: Task
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Motivation"
+      description: "2-5 sentences: what is wrong or needed, who it hurts, why now. One concrete example beats a general description."
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "Scope"
+      description: "What changes — by component."
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: "Out of scope"
+      description: "Plausible but deliberately excluded, and where it went."
+  - type: textarea
+    id: design
+    attributes:
+      label: "Design"
+      description: "Only subsections with something to say — delete the rest, don't leave empty headings. Every Decisions row needs a reason; without one it belongs in Open for the implementer, not here."
+      value: |
+        **Decisions**
+
+        |**Decision**|**Why**|
+        |:---------|:-----|
+        |<what was chosen; a rejected alternative is also a row>|<one-line reason>|
+
+        **Data model**
+
+        <new, changed and removed fields and tables, if any>
+
+        **API**
+
+        <what changes at a service boundary, if any>
+
+        **Sequence**
+
+        <interaction order, when it matters>
+
+        **Rollout**
+
+        <deploy order, if more than one service is involved — or say order doesn't matter>
+  - type: textarea
+    id: open-for-implementer
+    attributes:
+      label: "Open for the implementer"
+      description: "Explicitly open: class structure, naming, library choice within the decisions above."
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "Acceptance criteria"
+      description: "Observable condition: endpoint and field, log line, table and column, file on the stand."
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: "References"
+      description: "External source: documentation, standard, article, design doc or ADR in the repo — one line on why it's worth reading."

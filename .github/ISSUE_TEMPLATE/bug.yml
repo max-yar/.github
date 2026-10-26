@@ -1,0 +1,63 @@
+name: "Bug"
+description: "Something is broken"
+title: "[BUG] "
+type: Bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "One sentence: the symptom and the action that triggers it."
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to reproduce"
+      description: "Numbered steps, each with its purpose. State separately whether it reproduces always, sometimes, or once."
+      value: |
+        1. <action and its purpose>
+        2. <...>
+
+        Reproduces: <always / sometimes / once>
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected"
+      description: "What should have happened."
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual"
+      description: "What happened — observation only, no hypotheses."
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Affected service(s), version/build, and which stand (local / stage / prod). State the last known working version, or \"unknown\"."
+      value: |
+        |**Component**|**Version**|
+        |:---------|:-----|
+        |<service>|<build>|
+        |Stand|<local / stage / prod>|
+
+        Last known working version: <version, or "unknown">
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: "Log lines or stacktrace with timestamps."
+      render: shell
+  - type: textarea
+    id: suspected-cause
+    attributes:
+      label: "Suspected cause"
+      description: "Hypothesis kept separate from the facts above, with a permalink to the suspect line. Leave blank if there is no hypothesis."
