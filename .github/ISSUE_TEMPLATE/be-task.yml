@@ -29,25 +29,31 @@ body:
       label: "Design"
       description: "Only subsections with something to say — delete the rest, don't leave empty headings."
       value: |
-        **Decisions** — only choices local to the backend (the Story's Decisions cover anything that also touches the frontend)
+        #### Decisions
+
+        _Only choices local to the backend — the Story's Decisions cover anything that also touches the frontend._
 
         |**Decision**|**Why**|
         |:---------|:-----|
         |<what was chosen; a rejected alternative is also a row>|<one-line reason>|
 
-        **Data model**
+        #### Data model
 
         <new, changed and removed fields and tables; physical schema as an attached diagram with a legend>
 
-        **API**
+        #### API
 
         <implementation detail beyond the Story's sketch — validation rules, error codes, edge cases>
 
-        **Sequence** — only when this task spans more than one backend service (back / chat / notification / gateway)
+        #### Sequence
+
+        _Only when this task spans more than one backend service (back / chat / notification / gateway)._
 
         <order of calls or events between those services>
 
-        **Rollout** — same trigger: more than one backend service
+        #### Rollout
+
+        _Same trigger: more than one backend service._
 
         <deploy order between those services — or say order doesn't matter>
   - type: textarea

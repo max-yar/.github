@@ -28,25 +28,25 @@ body:
       label: "Design"
       description: "Only subsections with something to say — delete the rest, don't leave empty headings. Every Decisions row needs a reason; without one it belongs in Open for the implementer, not here."
       value: |
-        **Decisions**
+        #### Decisions
 
         |**Decision**|**Why**|
         |:---------|:-----|
         |<what was chosen; a rejected alternative is also a row>|<one-line reason>|
 
-        **Data model**
+        #### Data model
 
         <new, changed and removed fields and tables, if any>
 
-        **API**
+        #### API
 
         <what changes at a service boundary, if any>
 
-        **Sequence**
+        #### Sequence
 
         <interaction order, when it matters>
 
-        **Rollout**
+        #### Rollout
 
         <deploy order, if more than one service is involved — or say order doesn't matter>
   - type: textarea

@@ -28,21 +28,21 @@ body:
       label: "Design"
       description: "Only subsections with something to say — delete the rest, don't leave empty headings. Every Decisions row needs a reason; without one it belongs in a task's Open for the implementer, not here."
       value: |
-        **Decisions**
+        #### Decisions
 
         |**Decision**|**Why**|
         |:---------|:-----|
         |<what was chosen; a rejected alternative is also a row>|<one-line reason>|
 
-        **API**
+        #### API
 
         <sketch of the planned contract — endpoints, request/response shape, error codes>
 
-        **Sequence**
+        #### Sequence
 
         <cross-service interaction order, when it matters>
 
-        **Rollout**
+        #### Rollout
 
         <what to do before and after rollout, service rollout order — if order doesn't matter, say so>
   - type: textarea

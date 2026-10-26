@@ -29,7 +29,9 @@ body:
       label: "Design"
       description: "Usually empty — the contract already lives in the Story's Design → API and the merged OpenAPI spec. Fill in only for non-trivial client-side logic, or a choice local to the frontend with its own reason."
       value: |
-        **Decisions** — only choices local to the frontend (the Story's Decisions cover anything that also touches the backend); rare — most frontend work has none
+        #### Decisions
+
+        _Only choices local to the frontend — the Story's Decisions cover anything that also touches the backend. Rare; most frontend work has none._
 
         |**Decision**|**Why**|
         |:---------|:-----|
