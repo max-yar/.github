@@ -14,7 +14,7 @@ body:
     id: scope
     attributes:
       label: "Scope"
-      description: "What changes, by component."
+      description: "What the system can do after this, by component — outcomes, not classes or columns (those go to Design)."
     validations:
       required: true
   - type: textarea
